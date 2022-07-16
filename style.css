@@ -1,0 +1,42 @@
+*
+{
+  margin:15px;
+  margin-left:20px;
+}
+h1
+{
+  text-align:center;
+  text-decoration: underline;
+}
+.all_image
+{
+  position:relative;
+  left:200px;
+  width:70%;
+  height:20cm;
+}
+.all_image img
+{
+  height: 100%;
+  width: 100%;
+  /*object-fit: cover;*/
+}
+.next{
+  position:relative;
+  top:-380px;
+  left: 36cm;
+}
+.prev
+{
+  position:relative;
+  top:-380px;
+}
+.bottom{
+  display:flex;
+  position:relative;
+  left:650px;
+}
+h4:nth-child(1)
+{
+  color:red;
+}
