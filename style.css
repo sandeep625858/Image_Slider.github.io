@@ -3,6 +3,9 @@
   margin:15px;
   margin-left:20px;
 }
+body{
+  overflow-x: hidden;
+}
 h1
 {
   text-align:center;
