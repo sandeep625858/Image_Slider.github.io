@@ -9,6 +9,10 @@ const url=[
     "https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg?auto=compress&cs=tinysrgb&w=600"]
 next.addEventListener('click',()=>{
+    goNext();
+    clearInterval(slideInterval);
+})
+function goNext(){
     num++;
     if(num==url.length)
     {
@@ -27,8 +31,15 @@ next.addEventListener('click',()=>{
         header[num-1].innerHTML='O';
         header[num-1].style.color='black';
     }
-})
+}
+const slideInterval = setInterval(() => {
+    goNext();
+  }, 3000);
 prev.addEventListener('click',()=>{
+    goPrev();
+    clearInterval(slideInterval1);
+})
+function goPrev(){
     num--;
     if(num<0)
     {
@@ -47,4 +58,8 @@ prev.addEventListener('click',()=>{
         header[num+1].innerHTML='O';
         header[num+1].style.color='black';
     }
-})
+}
+
+const slideInterval1 = setInterval(() => {
+    goPrev();
+  }, 3000);
